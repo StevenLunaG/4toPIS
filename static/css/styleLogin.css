@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    height: 70vh;
+    background-color: #eae3dc;
+    display: flex;
+    align-items: self-start;
+    justify-content: center;
+}
+
+.form-content {
+    width: 100%;
+    max-width: 450px;
+    padding: 50px 60px 20px;
+    text-align: center;
+    border-radius: 25px;
+    background: linear-gradient(
+            to bottom right,
+            rgb(218, 159, 91),
+            rgb(234, 217, 198)
+    );
+    color: #fff;
+}
+
+.form-content h1 {
+    font-size: 30px;
+    margin-bottom: 60px;
+    color: #fffefe;
+    position: relative;
+}
+
+.form-content h1::after {
+    content: '';
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background: #cb7f2d;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.input-field {
+    background-color: rgba(103, 41, 41, 0.58);
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
+
+input {
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: none;
+    padding: 18px 15px;
+    color: #fffefe;
+
+}
+
+input::placeholder {
+    color: #fffefe;
+}
+
+.input-field i {
+    margin-left: 15px;
+    color: #cb7f2d;
+}
+
+form p {
+    color: #fffefe;
+    font-size: 13px;
+    text-align: left;
+}
+
+form p a {
+    color: #DA9F5B;
+    margin-left: 5px;
+}
+
+.btn-field {
+    width: 100%;
+    display: flex;;
+    justify-content: center;
+}
+
+.btn-field button {
+    flex-basis: 48%;
+    font-size: 16px;
+    background-color: #cb7f2d;
+    color: #fffefe;
+    height: 40px;
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
+}
+
+.btn-field-large {
+    width: 100%;
+    display: flex;;
+    justify-content: center;
+}
+
+.btn-field-large button {
+    margin-top: 25px;
+    flex-basis: 60%;
+    font-size: 16px;
+    background-color: #cb7f2d;
+    color: #fffefe;
+    height: 40px;
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
+}
+
+.input-group {
+    height: 200px;
+}
+
+.btn-field button.disable {
+    background-color: #eae9e4;
+    color: #2C2F35;
+}
+
+/* styleERROR.css */
+/* Estilos para mensajes de error e intentos restantes */
+.message-container {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+/* Estilos para mensajes de error */
+.error-message {
+    background-color: rgba(232, 77, 1, 0.73); /* Color de fondo rojo claro */
+    color: #ffffff; /* Color del texto rojo oscuro */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+
+.success-message {
+    background-color: rgba(101, 208, 71, 0.73); /* Color de fondo rojo claro */
+    color: #ffffff; /* Color del texto rojo oscuro */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+
+header {
+    text-align: center;
+    background-color: #eae3dc;
+    padding-bottom: 50px;
+}
+
+img {
+    width: 100%;
+}
+
+
+/* Estilos para mensajes de advertencia */
+/**.warning-message {
+    background-color: #fff3cd; /* Color de fondo amarillo claro
+    color: #856404; Color del texto amarillo oscuro
+    border: 1px solid #ffeeba;  Borde amarillo claro
+    padding: 10px;
+    margin-bottom: 10px;
+}*/
+
